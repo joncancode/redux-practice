@@ -75,4 +75,11 @@ class Game extends React.Component {
     }
 }
 
-export default connect(undefined, { makeGuess })(Game)
+export const mapStateToProps = state => ({
+    // guesses: state.guesses,
+    // feedback: state.feedback,
+    // correctAnswer: state.correctAnswer,
+});
+
+
+export default connect(mapStateToProps, { makeGuess })(Game)

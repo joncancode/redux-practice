@@ -13,12 +13,11 @@ import './index.css';
 import Game from './components/game';
 
 ReactDOM.render(
-    <Provider store= {store}>
+    <Provider store={store}>
     <Game />
     </Provider>,
     document.getElementById('root')
 );
 
-console.log("here i am", store.getState());
 store.dispatch(makeGuess("test"))
-console.log("does this work", store.getState());
+
