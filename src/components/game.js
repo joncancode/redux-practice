@@ -5,6 +5,8 @@ import GuessSection from './guess-section';
 import GuessCount  from './guess-count';
 import GuessList from './guess-list';
 
+import { makeGuess } from '../actions/index';
+
 import { connect } from 'react-redux'
 
 class Game extends React.Component {
@@ -73,4 +75,4 @@ class Game extends React.Component {
     }
 }
 
-export default connect()(Game)
+export default connect(undefined, { makeGuess })(Game)

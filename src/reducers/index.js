@@ -6,6 +6,21 @@ const initialState = {
   correctAnswer: Math.floor(Math.random() * 100) + 1
 };
 
+// const makeGuess = (state = [], action) => {
+//   switch (action.type) {
+//     case 'MAKE_GUESS':
+//       return [
+//         ...state,
+//         {
+//           id: action.id,
+//           guess: action.guess
+//         }
+//       ];
+//     default:
+//       return state;
+//   }
+// };
+
 export const hotAndColdReducer = (state = initialState, action) => {
 
   if (action.type === actions.MAKE_GUESS) {
@@ -17,10 +32,9 @@ export const hotAndColdReducer = (state = initialState, action) => {
       feedback: action.feedback,
       correctAnswer: action.correctAnswer
     })
-  
-    // else {
-    //     newGame() if (action.type === actions.whaterverTYPEIsFromTheAction2) {
 
-    //     return initialState;
+  }
+  else if (action.type === actions.NEW_GAME) {
+    return initialState
   }
 };
