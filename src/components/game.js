@@ -5,11 +5,10 @@ import GuessSection from './guess-section';
 import GuessCount  from './guess-count';
 import GuessList from './guess-list';
 
-import { makeGuess } from '../actions/index';
+// import { makeGuess, newGame } from '../actions/index';
+// import { connect } from 'react-redux'
 
-import { connect } from 'react-redux'
-
-class Game extends React.Component {
+export default class Game extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -75,11 +74,11 @@ class Game extends React.Component {
     }
 }
 
-export const mapStateToProps = state => ({
-    // guesses: state.guesses,
-    // feedback: state.feedback,
-    // correctAnswer: state.correctAnswer,
-});
+// export const mapStateToProps = state => ({
+//     // guess: this.state.guess,
+//     // feedback: state.feedback,
+//     // correctAnswer: this.state.correctAnswer,
+// });
 
 
-export default connect(mapStateToProps, { makeGuess })(Game)
+//  export default connect(mapStateToProps)(Game)

@@ -5,7 +5,11 @@ import InfoModal from './info-modal';
 
 import './header.css';
 
-export default class Header extends React.Component  {
+import { makeGuess, newGame } from '../actions/index';
+
+import { connect } from 'react-redux'
+
+export class Header extends React.Component  {
     constructor(props) {
         super(props);
         this.state = {
@@ -35,3 +39,5 @@ export default class Header extends React.Component  {
         );
     }
 };
+
+export default connect()(Header);
