@@ -11,5 +11,12 @@ export const makeGuess = (guess) => ({
  });
 
 
+export const WHAT_TOGGLE = 'WHAT_TOGGLE';
+export const whatToggle = (toggle) => ({
+    type: WHAT_TOGGLE,
+    toggle
+})
+
+
 //    feedback,
     //correctAnswer

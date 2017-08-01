@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 
 import store from './store';
 
-import {makeGuess} from './actions';
+import {makeGuess, newGame, whatToggle} from './actions';
 
 import './reset.css';
 import './index.css';
@@ -20,4 +20,5 @@ ReactDOM.render(
 );
 
 store.dispatch(makeGuess("test"))
-
+store.dispatch(newGame("test"))
+store.dispatch(whatToggle("test"))

@@ -5,7 +5,7 @@ import InfoModal from './info-modal';
 
 import './header.css';
 
-import { makeGuess, newGame } from '../actions/index';
+import { newGame, whatToggle } from '../actions/index';
 
 import { connect } from 'react-redux'
 
@@ -40,4 +40,10 @@ export class Header extends React.Component  {
     }
 };
 
-export default connect()(Header);
+const mapStateToProps = (state) => ({
+    newGame,
+    whatToggle
+});
+
+
+export default connect(mapStateToProps)(Header);

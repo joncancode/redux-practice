@@ -4,7 +4,7 @@ import GuessForm from './guess-form';
 
 import './guess-section.css';
 
-import { makeGuess, newGame } from '../actions/index';
+//import { makeGuess, newGame, whatToggle } from '../actions/index';
 
 import { connect } from 'react-redux'
 

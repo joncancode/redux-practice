@@ -2,7 +2,7 @@ import React from 'react';
 
 import './guess-list.css';
 
-import { makeGuess, newGame } from '../actions/index';
+//import { makeGuess, newGame, whatToggle} from '../actions/index';
 
 import { connect } from 'react-redux'
 
